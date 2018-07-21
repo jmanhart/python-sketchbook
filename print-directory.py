@@ -74,11 +74,11 @@
 
 
 
-import os
-
-path = os.getcwd()
-
-with os.scandir(path) as listOfEntries:
-    for entry in listOfEntries:
-        if entry.is_file():
-            print(entry.name)
+# import os
+#
+# path = os.getcwd()
+#
+# with os.scandir(path) as listOfEntries:
+#     for entry in listOfEntries:
+#         if entry.is_file():
+#             print(entry.name)
