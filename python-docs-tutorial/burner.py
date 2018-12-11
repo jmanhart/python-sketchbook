@@ -130,17 +130,96 @@
 # print function(0, a=0)
 
 
-def cheeseshop(kind, *arguments, **keywords):
-    print("-- Do you habe any", kind, "?")
-    print("-- I'm sorry, we're all out of", kind)
-    for arg in arguments:
-        print(arg)
-    print("-" * 40)
-    for kw in keywords:
-        print(kw, ":", keywords[kw])
+# def cheeseshop(kind, *arguments, **keywords):
+#     print("-- Do you habe any", kind, "?")
+#     print("-- I'm sorry, we're all out of", kind)
+#     for arg in arguments:
+#         print(arg)
+#     print("-" * 40)
+#     for kw in keywords:
+#         print(kw, ":", keywords[kw])
+#
+# cheeseshop("Limburger", "It's very runny, sir.",
+#            "It's really very, VERY runny, sir.",
+#            shopkeeper="Michael Palin",
+#            client="John Cleese",
+#            sketch="Cheese Shop Sketch")
 
-cheeseshop("Limburger", "It's very runny, sir.",
-           "It's really very, VERY runny, sir.",
-           shopkeeper="Michael Palin",
-           client="John Cleese",
-           sketch="Cheese Shop Sketch")
+
+
+
+# from collections import deque
+#
+# queue = deque(["Eric", "John", "Mike"])
+#
+#
+# queue.append("Graham")
+#
+#
+# print queue
+
+
+
+
+
+
+#
+# squares = list(map(lambda x: x**2, range(10)))
+#
+# print squares
+
+
+
+# dude = dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
+#
+# cat = {x: x**2 for x in (2,4,6)}
+#
+# print cat
+
+
+
+
+# knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+#
+# for k, v in knights.items():
+#     print(k, v)
+
+
+
+# def scope_test():
+#     def do_local():
+#         spam = "local spam"
+#
+#     def do_nonlocal():
+#         nonlocal spam
+#         spam = "nonlocal spam"
+#
+#     def do_global():
+#         global spam
+#         spam = "global spam"
+#
+#     spam = "test spam"
+#     do_local()
+#     print("After local assignment:", spam)
+#     do_nonlocal()
+#     print("After nonlocal assignment:", spam)
+#     do_global()
+#     print("After global assignment:", spam)
+#
+# scope_test()
+# print("In global scope:", spam)
+#
+# print scope_test()
+
+
+
+
+
+
+class Complex:
+    def __init__(self, realpart, imagpart):
+        self.r = realpart
+        self.i = imagpart
+
+x = Complex(3.0, -4.5)
+print(x.r, x.i)
