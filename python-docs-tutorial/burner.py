@@ -52,12 +52,95 @@
 
 # Functions
 
-def fib(n):
-    """Print a Fibonacci series up to n."""
-    a, b = 0, 1
-    while a < n:
-        print(a)
-        a, b = b, a+b
-    print()
+# def fib(n):
+#     """Print a Fibonacci series up to n."""
+#     a, b = 0, 1
+#     while a < n:
+#         print(a)
+#         a, b = b, a+b
+#     print()
+#
+# fib(10)
 
-fib(1000)
+
+# def fib2(n):
+#     result = []
+#     a, b = 0, 1
+#     while a < n:
+#         result.append(a)
+#         a, b = b, a+b
+#     return result
+#
+# f100 = fib2(100)
+#
+# print f100
+
+#
+# def ask_ok(prompt, retries=4, reminder='Please try again!'):
+#     while True:
+#         ok = input(prompt)
+#         if ok in ('y', 'ye', 'yes'):
+#             return True
+#         if ok in ('n', 'no', 'nop', 'nope'):
+#             return False
+#         retries = retries - 1
+#         if retries < 0:
+#             raise ValueError('invalid user response')
+#         print(reminder)
+#
+# ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')
+
+
+
+# i = 5
+#
+# def f(arg=i):
+#     print(arg)
+#
+# i = 6
+#
+# f()
+
+
+# def f(a, L=[]):
+#     L.append(a)
+#     return L
+#
+# print(f(1))
+# print(f(2))
+
+
+# def f(a, L=None):
+#     if L is None:
+#         L = []
+#     L.append(a)
+#     return L
+#
+# print f(3)
+
+
+
+# def parrot(voltage, state='a stiff', action='voom', type='Swedish'):
+#     print("-- This parrot wouldn't", action)
+
+
+# def function(a):
+#     pass
+#
+# print function(0, a=0)
+
+
+def cheeseshop(kind, *arguments, **keywords):
+    print("-- Do you habe any", kind, "?")
+    print("-- I'm sorry, we're all out of", kind)
+    for arg in arguments:
+        print(arg)
+    print("-" * 40)
+    for kw in keywords:
+        print(kw, ":", keywords[kw])
+
+cheeseshop("Limburger", "It's very runny, sir.",
+           "It's really very, VERY runny, sir.",
+           shopkeeper="Michael Palin",
+           client="John Cleese",
+           sketch="Cheese Shop Sketch")
